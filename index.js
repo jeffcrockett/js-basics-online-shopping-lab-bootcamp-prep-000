@@ -39,6 +39,7 @@ function viewCart(){
     }
 }
 
+function total()
 
 
 
