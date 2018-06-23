@@ -47,7 +47,26 @@ function total(){
   return total;
 }
 
+function removeFromCart(name){
+  for(var i=0; i<cart.length; i++){
+    if(cart[i].itemName === name){
+      cart.splice(i, 1);
+      return cart;
+    }
+  }
+  return "That item is not in your cart."
+}
 
+function placeOrder(card){
+  if(typeof card === 'undefined'){
+    return "Sorry, we don't have a credit card on file for you."
+  }
+  else{
+    total = total();
+    cart = [];
+    return `Your total cost is ${total}, which will be charged to the card ${card}`
+  }
+}
 
 
 
