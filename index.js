@@ -1,5 +1,10 @@
 var cart = [];
 
+function addToCart(name){
+  return new Object({itemName: name, 
+                    itemPrice: Math.floor(Math.random()*100)})
+}
+
 
 
 
