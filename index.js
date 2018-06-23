@@ -23,7 +23,7 @@ function viewCart(){
   }
   
   else if(cart.length == 2){
-    return `${theString} ${cart[0].itemName} at $${cart[0].itemPrice} and ${cart[1].itemName} at $${cart[1].itemPrice}.`
+    return `${theString} ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`
   }
   
   else {
