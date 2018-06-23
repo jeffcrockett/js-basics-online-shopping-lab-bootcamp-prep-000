@@ -19,7 +19,7 @@ function addToCart(name){
 function viewCart(){
   var theString = 'In your cart, you have ';
   if(cart.length == 1){
-    return `${theString} ${cart[0].itemName} at $${cart[0].itemPrice}.` 
+    return `${theString}${cart[0].itemName} at $${cart[0].itemPrice}.` 
   }
   
   else if(cart.length == 2){
