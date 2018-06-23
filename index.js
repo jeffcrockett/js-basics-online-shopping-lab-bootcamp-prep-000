@@ -1,4 +1,4 @@
-cart = [];
+var cart = [];
 
 function addToCart(name){
   return new Object({itemName: name, 
